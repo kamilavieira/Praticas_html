@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #75a7bb;
+    color: white;
+    font-weight: 400;
+  }
+  
+  header {
+    background: rgb(34, 193, 241);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-family: Winky Rough, sans-serif;
+    font-size: 30px;
+  }
+  /*Navegação do cabeçalho*/
+  nav ul {
+    background: rgb(36, 118, 173);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px 0;
+    font-weight: 900;
+    font-size: 20px;
+  }
+
+  /*Itens da lista do cabeçalho*/
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    font-family: Winky Rough, sans-serif;
+  }
+
+  nav ul li a:hover {
+    color: #005e8a;
+
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 30px;
+  }
+
+  /*titulos do sobre, habilidades...*/
+  h2 {
+    border-bottom: 2px solid #f5f6f8;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    color: #2e01f8;
+  }
+
+  /*lista das habilidades*/
+  ul {
+    list-style: inside circle;
+  }
+
+  .projects {
+    margin-bottom: 15px;
+  }
+  /*Para deixar h3 e h4 do mesmo tamanho*/
+  .text_equal {
+    font-size: 20px;
+    color: #140261;
+  }
+  .p_class{
+    color:#140261;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  /*Cor do "clique aqui"*/
+  .color_ancor {
+    color: #041dfd;
+    text-decoration: none;
+  }
+  /*formulario*/
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label {
+    margin-top: 10px;
+  }
+  
+  form input, form textarea, form button {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+  form button {
+    background: blue;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  /*animação quando passa o moude em cima*/
+  form button:hover {
+    background: #005e8a;
+  }
+
+/*rodapé*/
+  footer {
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    margin-top: 20px;
+    
+  }
+
+  .ancor_footer {
+    text-decoration: none;
+    color: #041dfd;
+  }

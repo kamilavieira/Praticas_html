@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS Element</title>
+</head>
+<style>
+
+</style>
+<body>
+    <header>
+        <div class="container">
+          <h1>Kamila de Souza Vieira</h1>
+            <p>Desenvolvedora Web | Engenheira em Telecomunicações | Arquiteta de Soluções em Nuvem</p>
+        </div>
+      </header>
+      <!--Cabeçalho-->
+      <nav>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <section id="sobre">
+          <h2>Sobre Mim</h2>
+            <p>Sou formada em Engenharia de Telecomunicações pelo IFCE e atualmente estou me especializando na área de desenvolvimento web. Já tive a oportunidade de atuar como Arquiteta de Soluções em nuvem, trabalhando com Microsoft Azure. Este site, que desenvolvi pessoalmente, reúne os projetos que já realizei.</p>
+        </section>
+
+        <section id="habilidades">
+          <h2>Habilidades</h2>
+          <ul>
+            <li>HTML5, CSS3, JavaScript (nível júnior)</li>
+            <li>Kotlin e JavaScript (nível júnior)</li>
+            <li>Git, GitHub</li>
+            <li>Inglês avançado</li>
+            <li>Fundamentos em Inteligência Artificial</li>
+          </ul>
+        </section>
+
+        <section id="projetos">
+          <h2>Projetos</h2>
+          <div class="projects">
+            <h3 class="text_equal">Desenvolvimento Web</h3>
+                <p class="p_class"><em>Website de cosméticos</em></p>
+                <p>Este foi um projeto que eu fiz em outro curso. Trata-se de um site de compras online de cosméticos.</p>
+                <p>Para acessar o projeto no Github, <a class="color_ancor" href="#">Clique aqui</a>.</p> <!--adicionar link depois-->
+            
+            <h4 class="text_equal">Desenvolvimento Android</h4>
+                <p class="p_class"><em>Aplicativo de consumo de gasolina</em></p>
+                <p>Esse aplicativo mostra o gasto com gasolina que o motorista terá ao pecorrer um determinado trajeto. Serve tanto para viagens pequenas como para viagens longas.</p>
+                <p>Para acessar o projeto no Github, <a class="color_ancor" href="#">Clique aqui</a>.</p> <!--adicionar link depois-->
+          </div>
+        </section>
+
+        <section id="contato">
+          <h2>Contato</h2>
+          <form id="contact-form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            <button type="submit">Enviar</button>
+          </form>
+          <p id="feedback"></p>
+
+        </section>
+      </main>
+      <footer>
+        <p>&copy; 2025 Kamila de Souza Vieira</p>
+        <!--Colocar links depois-->
+        <p>Siga-me nas redes sociais: <a class="ancor_footer"  href="https://www.linkedin.com/in/kamila-de-souza-vieira/">Linkedin</a>, <a class="ancor_footer"  href="https://github.com/kamilavieira">Github</a></p>
+      </footer>
+</body>
+</html>
