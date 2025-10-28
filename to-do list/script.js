@@ -255,7 +255,7 @@
             setSuggestButtonLoading(true);
 
             const prompt = `Você é um assistente de planejamento de tarefas. Dada a seguinte tarefa principal, por favor, quebre-a em 3 a 5 subtarefas acionáveis. Retorne apenas a lista de subtarefas, cada uma em uma nova linha. Não inclua marcadores, numeração ou qualquer texto introdutório ou conclusivo. Tarefa Principal: "${mainTaskText}"`;
-            const apiKey = "AIzaSyChOV3uHYYV_3xTTGQVMqVSTXxag41wjIs"; 
+            const apiKey = ""; //Se for usar esse projeto, insira aqui a SUA chave de API do Gemini
             const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
             
             const payload = {
@@ -330,4 +330,5 @@
         // --- Inicialização ---
         document.addEventListener('DOMContentLoaded', () => {
             fetchTodos();
+
         });
