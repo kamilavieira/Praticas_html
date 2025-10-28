@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Icon Animation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+        
+        .search-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+        
+        .search-icon {
+            position: absolute;
+            right: 10px;
+            color: #555;
+            cursor: pointer;
+            font-size: 20px;
+            z-index: 10;
+            transition: all 0.3s ease;
+        }
+        
+        .search-input {
+            width: 0;
+            padding: 10px 40px 10px 10px;
+            border: none;
+            border-radius: 25px;
+            outline: none;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: width 0.3s ease;
+            font-size: 16px;
+        }
+        
+        .search-container.active .search-input {
+            width: 250px;
+        }
+        
+        .search-container.active .search-icon {
+            right: auto;
+            left: 10px;
+            color: #2196F3;
+        }
+        
+        .search-container.active .search-input {
+            padding: 10px 10px 10px 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="search-container">
+        <i class="fas fa-search search-icon"></i>
+        <input type="text" class="search-input" placeholder="Pesquisar...">
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchContainer = document.querySelector('.search-container');
+            const searchIcon = document.querySelector('.search-icon');
+            const searchInput = document.querySelector('.search-input');
+            
+            searchIcon.addEventListener('click', function() {
+                searchContainer.classList.toggle('active');
+                
+                if (searchContainer.classList.contains('active')) {
+                    // Focus the input when expanded
+                    setTimeout(() => {
+                        searchInput.focus();
+                    }, 300);
+                }
+            });
+            
+            // Close search when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!searchContainer.contains(event.target) && searchContainer.classList.contains('active')) {
+                    searchContainer.classList.remove('active');
+                }
+            });
+            
+            // Prevent the search container from closing when clicking inside it
+            searchContainer.addEventListener('click', function(event) {
+                event.stopPropagation();
+            });
+        });
+    </script>
+</body>
+</html>
