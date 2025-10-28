@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 100;
+            font-size: large;
+            color:blueviolet;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+        }
+        select{
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="regioes">REGIÕES:</label>
+        <select id="regioes" onchange="buscarEstados()"></select>
+        <label for="estados">ESTADOS:</label>
+        <select id="estados" onchange="buscarMunicipios()"></select>
+        <label for="municipios">MUNICÍPIOS:</label>
+        <select id="municipios"></select>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
