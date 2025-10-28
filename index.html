@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Remover Produto</title>
+</head>
+<body>
+  <h1>Remover Produto</h1>
+  <button id="btnRemover">Remover Produto</button>
+
+  <script>
+    document.getElementById('btnRemover').addEventListener('click', () => {
+      fetch('http://localhost:3000/produtos/remover', {
+        method: 'DELETE'
+      })
+      .then(res => res.json())
+      .then(data => alert(data.mensagem))
+      .catch(err => alert('Erro: ' + err));
+    });
+  </script>
+</body>
+</html>
