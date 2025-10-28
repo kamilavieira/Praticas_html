@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>CSS Basics</title>
+  </head>
+  <body>
+    <form action="">
+        <div>
+            <label for="nome">Nome</label>
+            <input required minlength="6" maxlength="120" placeholder="insira seu nome" type="text" id="nome">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input placeholder="insira seu email" type="email" id="email">
+        </div>
+        <div>
+            <label for="senha">Senha</label>
+            <input placeholder="insira sua senha" type="password" id="senha"> <br>
+            <button type="enviar">Enviar</button>
+        </div>
+        <input type="date" name="date" id="date">
+        <input type="checkbox" name="checkbox" id="checkbox">
+        <input type="datetime-local" name="date-local" id="date-local">
+        <input type="number" name="number" id="number">
+        <input type="color" name="color" id="color">
+        <select name="assunto" id="">
+          <option disabled selected value="">Selecione uma opção</option>
+          <option value="option-1">Opção 1</option>
+          <option value="option-2">Opção 2</option>
+          <option value="option-3">Opção 3</option>
+        </select>
+        
+        <div>
+          <fieldset>
+            <legend>Tema:</legend>
+            <label>
+              <input required type="radio" name="tema" id="compra" value="compra">Compra
+            </label>
+            <label>
+              <input required type="radio" name="tema" id="cotacao" value="cotacao">Cotacao
+            </label>
+          </fieldset>
+          <label for="mensagem">Mensagem:</label>
+          <textarea required name="message" id="mensagem"></textarea>
+          <div>
+            <input type="reset" value="reset">
+            <input type="submit" value="enviar">
+          </div>
+        </div>
+    </form>
+
+    <!--<p style="color: purple; font-size: larger; background-color: silver;">My first stylized paragraph</p>
+    <p style="color: green; font-size: larger; background-color: gold;">My second stylized paragraph</p>-->
+  </body>
+</html>
